@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DR ASSEY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body id="contact" onload="requireLogin()">
+
+  <nav>
+  <h2>DR ASSEY</h2>
+  <div class="menu-btn" id="menuBtn">&#9776;</div> <!-- Hamburger icon -->
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dashboard.html">Get Doc</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="#" onclick="logout()">Logout</a></li>
+  </ul>
+</nav>
+
+<main>
+<section class="lesson">
+    <h1>contact dr Assey</h1>
+    <div class="auth-container">
+    <div class="auth-box">
+  <h2>Contact Us</h2>
+  <hr>
+        <h3>Email:</h3>
+        <p>emmahassey09@gmail.com</p>
+
+        <h3>WhatsApp:</h3>
+        <p>+255 794 318 660</p>
+    
+        <h3>Phone:</h3>
+        <p>+255 679 618 660
+
+        <h3>Location: </h3> 
+        <p>Kilimanjaro</p>
+    </div>
+  </div>
+
+    <!-- Feedback Form Card -->
+    <div class="auth-container">
+    <div class="auth-box">
+      <h2>Send us a Message</h2>
+      <form id="feedbackForm" class="feedback-form">
+        <input type="text" id="fb_name" name="name" placeholder="Your Name" required>
+        <input type="email" id="fb_email" name="email" placeholder="Your Email" required>
+        <textarea id="fb_message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html" id="footerHomeBtn">Home</a></li>
+          <li><a href="dashboard.html" id="footerMedicineBtn">Get Doc</a></li>
+          <li><a href="about.html" id="footerAboutBtn">About Us</a></li>
+          <li><a href="contact.html" id="footerContactBtn">Contact</a></li>
+          <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +255 794 318 660</li>
+          <li><i class="fas fa-envelope"></i> emmahassey09@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Kilimanjaro, Tanzania</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EMMAH S ASSEY. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

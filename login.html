@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auth - DR ASSEY</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-box">
+      <h2 id="formTitle">Login to Dr Assey</h2>
+
+      <div class="login-container">
+        <!-- Tabs -->
+        <div class="login-tabs">
+          <div id="tab-login" class="active-tab">Login</div>
+          <div id="tab-signup">Sign Up</div>
+          <div id="tab-forgot">Forgot Password</div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" class="active">
+          <div class="input-wrapper">
+            <input type="email" id="login_email" placeholder="Email" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" id="login_password" placeholder="Password" required>
+            <span class="toggle-password" data-toggle="login_password">👁️</span>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+
+        <!-- SIGNUP FORM -->
+        <form id="signupForm" style="display:none;">
+          <div class="input-wrapper">
+            <input type="text" id="su_fullname" placeholder="Fullname" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="email" id="su_email" placeholder="Email" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" id="su_phone" placeholder="Phone / Contact" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" id="su_password" placeholder="Password" required>
+            <span class="toggle-password" data-toggle="su_password">👁️</span>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" id="su_confirm" placeholder="Confirm Password" required>
+            <span class="toggle-password" data-toggle="su_confirm">👁️</span>
+          </div>
+          <button type="submit">Sign Up</button>
+          <p style="text-align:center;margin-top:10px;">Or sign up with:</p>
+          <button type="button" class="google-btn">Google Account</button>
+        </form>
+
+        <!-- FORGOT PASSWORD FORM -->
+        <form id="forgotForm" style="display:none;">
+          <p>Enter the email you used to register:</p>
+          <div class="input-wrapper">
+            <input type="email" id="forgot_email" placeholder="e.g emm********@gmail.com" required>
+          </div>
+          <button type="submit">Send OTP</button>
+        </form>
+
+        <!-- OTP + NEW PASSWORD FORM (hidden by default) -->
+        <form id="resetForm" style="display:none;">
+          <p>Enter the OTP sent to your email and set a new password.</p>
+          <div class="input-wrapper">
+            <input type="text" id="otp_code" placeholder="Enter OTP" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" id="new_password" placeholder="New Password" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" id="confirm_new_password" placeholder="Confirm New Password" required>
+          </div>
+          <button type="submit">Reset Password</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</body>
+</html>
