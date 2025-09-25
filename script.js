@@ -20,8 +20,8 @@ function logout() {
 const documentsDB = {
   "Nursing": {
     "Year 1": [
-      { title: "NMT04101: INFECTION PREVENTION AND CONTROL", type: "notes", file: "docs/NMT04101.doc" },
-      { title: "NMT04102: PROFESSIONALISM IN NURSING", type: "notes", file: "docs/NMT04102.doc" },
+      { title: "NMT04101: INFECTION PREVENTION AND CONTROL", type: "notes", file: "NMT04101.doc" },
+      { title: "NMT04102: PROFESSIONALISM IN NURSING", type: "notes", file: "NMT04102.doc" },
       { title: "NMT04103: HUMAN ANATOMY AND PHYSIOLOGY", type: "notes", file: "docs/NMT04103.doc" },
       { title: "NMT04104: BASIC COMPUTER APPLICATIONS", type: "notes", file: "docs/NMT04104.doc" },
       { title: "NMT04105: COMMUNICATION SKILLS", type: "notes", file: "docs/NMT04105.doc" },
